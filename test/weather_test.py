@@ -40,8 +40,6 @@ class Weather(TestCase):
         print(f'Expect city = {exp_city}, while actual city = {act_city}')
         self.assertEqual(exp_city, act_city, f'Expect city = {exp_city}, while actual city = {act_city}')
 
-if __name__ == '__main__':
-    pass
 
 
 
