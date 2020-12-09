@@ -1,6 +1,11 @@
+import os
+
 import allure
 
 from unittest import TestCase
+
+import pytest
+
 from library.httpclient import HttpClient
 
 
@@ -39,4 +44,7 @@ class Weather(TestCase):
         act_city = response.json()['weatherinfo']['city']
         print(f'Expect city = {exp_city}, while actual city = {act_city}')
         self.assertEqual(exp_city, act_city, f'Expect city = {exp_city}, while actual city = {act_city}')
+
+if __name__ == '__main__':
+    pass
 
